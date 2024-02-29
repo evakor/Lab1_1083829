@@ -14,7 +14,7 @@ def get_url_info(url):
     with requests.get(url) as response:  # το αντικείμενο response
     
         # print("\nHeaders of the website:",response.headers)
-        print("\033[1mWebsite Headers: \033[0m")
+        print("\033[1mWebsite Headers: \033[0m") #bold
         for key, values in response.headers.items():
             print(f"{key}:{values}")
             
